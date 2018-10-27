@@ -1,0 +1,22 @@
+1.解压缩压缩包内包含3个文件：
+
+MSCOMM.SRG
+
+MSCOMM32.DEP
+
+mscomm32.ocx
+
+?
+
+2.复制文件到指定路径：
+
+32位的系统，文件复制到C:\WINDOWS\SYSTEM32目录下；
+
+64位的系统，文件复制到C:\Windows\SysWOW64目录下。
+
+
+
+3.win+r输入cmd打开cmd窗口，在cmd中输入：
+
+32位：regsvr32 C:\Windows\System32\mscomm32.ocx
+64位：regsvr32 C:\Windows\SysWOW64\mscomm32.ocx
